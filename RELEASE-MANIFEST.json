@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "productName": "TSY PhotoConverter 照片轉檔工具",
+  "version": "1.1.0",
+  "releaseDate": "2026-08-31",
+  "sourceRepository": "private-local-source",
+  "releaseRepository": "https://github.com/TSY3991/TSY.PhotoConverter",
+  "platform": "Windows 10/11",
+  "assets": [
+    {
+      "file": "PhotoConverter-Portable-x64-v1.1.0.zip",
+      "type": "Portable",
+      "architecture": "x64",
+      "bytes": 84431506,
+      "sha256": "468DC753F45F312C62C6AA7C8B5E0E0A7BDB0A482840C9AE6C22EC311F398D0C"
+    },
+    {
+      "file": "PhotoConverter.exe",
+      "packagedInside": "PhotoConverter-Portable-x64-v1.1.0.zip",
+      "type": "Executable",
+      "architecture": "x64",
+      "bytes": 90168307,
+      "sha256": "E47A08822A81F39572E77D14B220CF3B434465B64E33BE9BF12E2A3D6E0F2F9B"
+    }
+  ]
+}
