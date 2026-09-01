@@ -1,33 +1,33 @@
 {
     "schemaVersion":  1,
     "productName":  "TSY PhotoConverter 照片轉檔工具",
-    "version":  "1.2.0",
-    "releaseDate":  "2026-08-31",
+    "version":  "1.2.1",
+    "releaseDate":  "2026-09-01",
     "sourceRepository":  "private-local-source",
     "releaseRepository":  "https://github.com/TSY3991/TSY.PhotoConverter",
     "platform":  "Windows 10/11",
     "assets":  [
                    {
-                       "file":  "PhotoConverter-Portable-x64-v1.2.0.zip",
+                       "file":  "PhotoConverter-Portable-x64-v1.2.1.zip",
                        "type":  "Portable",
                        "architecture":  "x64",
-                       "bytes":  84190254,
-                       "sha256":  "8FF01BBF2F1679C4F97FEDBAE83D3F6039F0F2B308FE9D5650A86161D3F1933F"
+                       "bytes":  84217610,
+                       "sha256":  "114AFC3F1FF0DE7FB5D62258B1BD1765B3C4A2DACC7804ACFCD8613A8FF20D17"
                    },
                    {
                        "file":  "PhotoConverter.exe",
-                       "packagedInside":  "PhotoConverter-Portable-x64-v1.2.0.zip",
+                       "packagedInside":  "PhotoConverter-Portable-x64-v1.2.1.zip",
                        "type":  "Executable",
                        "architecture":  "x64",
-                       "bytes":  90170882,
-                       "sha256":  "ED643563D1739AA7CB639B04F1A4D915EDBE9D1265D0293BC455CB4270611B9B"
+                       "bytes":  90158188,
+                       "sha256":  "F5573525D053415BF202E56E4CAA3F683559D6A1DE23F287C3848CEC566125C1"
                    },
                    {
-                       "file":  "PhotoConverterSetup-v1.2.0.exe",
-                       "type":  "Installer",
+                       "file":  "PhotoConverterSetup-v1.2.1.exe",
+                       "type":  "Setup",
                        "architecture":  "x64",
-                       "bytes":  90247680,
-                       "sha256":  "5DE0C564F9D1B81C360B4BEDAEFFB1C7261684AC7CA470ECBCF15F8A730A5A91"
+                       "bytes":  90214400,
+                       "sha256":  "C89B36E5B328E24766BBE1284BBD7BA874550689DE4AA4CFA4B750C798C2CECC"
                    }
                ]
 }
