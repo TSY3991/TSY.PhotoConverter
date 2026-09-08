@@ -10,10 +10,10 @@ PhotoConverter 是 Windows 10/11 x64 的批次圖片轉檔工具，提供 Setup 
 - [微光工具箱說明頁](https://tsy3991.github.io/TSY.Microglow-Tools/tools/photo-converter/)
 - [TSY 微光創作室 Facebook](https://www.facebook.com/TSY.Microglow)
 
-目前正式版本：**v1.2.1**（2026-09-01）
+目前正式版本：**v1.2.2**（2026-09-08）
 
-- 一般使用者建議下載 `PhotoConverterSetup-v1.2.1.exe`：雙擊執行，跟著安裝精靈走即可，會建立開始功能表／桌面捷徑，之後可從「新增或移除程式」解除安裝。**不需要系統管理員權限**。
-- 若不想安裝，可改下載 `PhotoConverter-Portable-x64-v1.2.1.zip` 免安裝版，解壓縮後直接執行 `PhotoConverter.exe`。
+- 一般使用者建議下載 `PhotoConverterSetup-v1.2.2.exe`：雙擊執行，跟著安裝精靈走即可，會建立開始功能表／桌面捷徑，之後可從「新增或移除程式」解除安裝。**不需要系統管理員權限**。
+- 若不想安裝，可改下載 `PhotoConverter-Portable-x64-v1.2.2.zip` 免安裝版，解壓縮後直接執行 `PhotoConverter.exe`。
 - 安裝程式尚未申請數位簽章憑證，執行時若出現「Windows 已保護您的電腦」的藍色畫面，屬正常現象，點選「其他資訊」→「仍要執行」即可繼續安裝。
 
 ## 支援格式
@@ -44,8 +44,8 @@ PhotoConverter 是 Windows 10/11 x64 的批次圖片轉檔工具，提供 Setup 
 Release 會提供 `SHA256.txt` 與 `RELEASE-MANIFEST.json`。下載後可在 PowerShell 執行：
 
 ```powershell
-Get-FileHash .\PhotoConverter-Portable-x64-v1.2.1.zip -Algorithm SHA256
-Get-FileHash .\PhotoConverterSetup-v1.2.1.exe -Algorithm SHA256
+Get-FileHash .\PhotoConverter-Portable-x64-v1.2.2.zip -Algorithm SHA256
+Get-FileHash .\PhotoConverterSetup-v1.2.2.exe -Algorithm SHA256
 ```
 
 ## 授權

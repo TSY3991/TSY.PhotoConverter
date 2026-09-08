@@ -1,5 +1,42 @@
 # Release 資訊
 
+## v1.2.2 — 2026-09-08
+
+本版強化批次轉檔安全性與 Windows 使用體驗：已轉好的圖片不會在下一次掃描時再次被轉檔；並統一更新主程式、視窗、工作列、安裝程式與捷徑圖示。安裝程式也修正桌面／開始功能表捷徑可能只有圖示、卻沒有正確啟動目標的問題。
+
+### 主要更新
+
+- 輸出回來源資料夾時統一加上 `_converted`，重新掃描會辨識並排除已完成的成品。
+- 原始圖片已移至資源回收筒、資料夾只剩成品時，也不會把成品再次加入待轉清單。
+- 換用 256／128／64／48／32／16px 的全彩 PNG 壓縮 ICO，主程式、視窗、工作列、Alt+Tab、Setup 與捷徑使用相同圖示。
+- 安裝程式改用 Windows 原生 Shell Link 建立捷徑，完整寫入 `TargetPath`、`WorkingDirectory` 與 `IconLocation`。
+- Setup 建置加入隔離捷徑讀回測試，若捷徑無法啟動主程式就直接中止建置。
+- 保留較矮螢幕的視窗工作區防護，最小化、最大化、還原、拖曳、縮放與關閉均已重新驗證。
+
+### 下載資產
+
+- `PhotoConverterSetup-v1.2.2.exe`：Windows x64 安裝版（建議一般使用者使用）
+- `PhotoConverter-Portable-x64-v1.2.2.zip`：Windows x64 免安裝版
+- `SHA256.txt`：安裝版／ZIP／解壓後 EXE 的 SHA-256
+- `RELEASE-MANIFEST.json`：版本、日期與資產資訊
+
+### 已驗證範圍
+
+- 核心測試 21/21 通過，包含「已轉成品不會再次掃描」與「原圖回收後只剩成品也不會再次掃描」。
+- Portable UI Automation 通過：視窗移動、四邊／四角縮放、最大化／還原、關閉、WebP 轉檔、再次掃描排除成品、單一執行個體與 Facebook 按鈕。
+- Setup UI Automation 通過：移動、縮放、最小化／還原、最大化／還原與關閉。
+- 實際安裝後已驗證桌面／開始功能表捷徑、解除安裝登錄資訊與安裝檔雜湊。
+
+### 使用需求與限制
+
+- 支援 Windows 10/11 x64；目前未提供 ARM64 版本。
+- 輸入：HEIC、HEIF、JPG、JPEG、PNG、WebP、BMP、TIF、TIFF、GIF、AVIF、ICO。
+- 輸出：JPG、PNG、WebP、AVIF、TIFF、BMP、GIF、ICO、PDF。
+- HEIC/HEIF 解碼依賴 Windows HEIF codec 與實際照片編碼；不保證所有手機或設備產生的檔案都能解碼。
+- GIF 只輸出第一張靜態畫面，不保留動畫。
+- PDF 模式會輸出 `ConvertedImages.pdf`；同名檔案已存在時整批略過，且不會回收原始圖片。
+- 安裝程式尚未申請數位簽章，Windows SmartScreen 可能顯示安全提醒。
+
 ## v1.2.1 — 2026-09-01
 
 修正兩個 v1.2.0 遺留問題：
