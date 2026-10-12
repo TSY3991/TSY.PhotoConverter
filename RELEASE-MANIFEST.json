@@ -1,33 +1,33 @@
 {
-  "schemaVersion": 1,
-  "productName": "TSY PhotoConverter 照片轉檔工具",
-  "version": "1.2.2",
-  "releaseDate": "2026-09-08",
-  "sourceRepository": "private-local-source",
-  "releaseRepository": "https://github.com/TSY3991/TSY.PhotoConverter",
-  "platform": "Windows 10/11",
-  "assets": [
-    {
-      "file": "PhotoConverter-Portable-x64-v1.2.2.zip",
-      "type": "Portable",
-      "architecture": "x64",
-      "bytes": 84872989,
-      "sha256": "485F350EC65B93BF4B28D5D129E8FB97046A04D4AEF0AF2B3F86974CA62E04BD"
-    },
-    {
-      "file": "PhotoConverter.exe",
-      "packagedInside": "PhotoConverter-Portable-x64-v1.2.2.zip",
-      "type": "Executable",
-      "architecture": "x64",
-      "bytes": 90596882,
-      "sha256": "6444416B7CB1CECFEED050A2CF3A07D3AEF0C4AB4B03349C5EA4C39AA23D8515"
-    },
-    {
-      "file": "PhotoConverterSetup-v1.2.2.exe",
-      "type": "Setup",
-      "architecture": "x64",
-      "bytes": 90785792,
-      "sha256": "9F09316B51C99CED43AA505900FE9EEDC8B3B62D137A608FFCB79D4B7FF27958"
-    }
-  ]
+    "schemaVersion":  1,
+    "productName":  "TSY PhotoConverter 照片轉檔工具",
+    "version":  "1.2.3",
+    "releaseDate":  "2026-10-12",
+    "sourceRepository":  "private-local-source",
+    "releaseRepository":  "https://github.com/TSY3991/TSY.PhotoConverter",
+    "platform":  "Windows 10/11",
+    "assets":  [
+                   {
+                       "file":  "PhotoConverter-Portable-x64-v1.2.3.zip",
+                       "type":  "Portable",
+                       "architecture":  "x64",
+                       "bytes":  84628744,
+                       "sha256":  "FED1C7FAA2A6B9C594950CD4D47D84B4E01A30CA78563EB0BE681864CB1C66B8"
+                   },
+                   {
+                       "file":  "PhotoConverter.exe",
+                       "packagedInside":  "PhotoConverter-Portable-x64-v1.2.3.zip",
+                       "type":  "Executable",
+                       "architecture":  "x64",
+                       "bytes":  90596725,
+                       "sha256":  "8D5B7DB4B13D8D5D746D1C600931AD956A47F14ABC94CAA888FCE9775DF74052"
+                   },
+                   {
+                       "file":  "PhotoConverterSetup-v1.2.3.exe",
+                       "type":  "Setup",
+                       "architecture":  "x64",
+                       "bytes":  90785792,
+                       "sha256":  "521EE88E724A500AC779E22F26CB78660F1065D7932B3A6AB7403F5C42823A7C"
+                   }
+               ]
 }
